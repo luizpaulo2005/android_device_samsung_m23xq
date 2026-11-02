@@ -15,7 +15,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/samsung/m23xq/device.mk)
 
 # Inherit some common Infinity-X stuff.
-$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
+$(call inherit-product, vendor/custom/config/common_full_phone.mk)
 
 # Display
 TARGET_SCREEN_HEIGHT := 2408
@@ -27,7 +27,7 @@ INFINITY_MAINTAINER := "akif"
 WITH_GAPPS := true
 TARGET_SUPPORTS_BLUR := true
 
-PRODUCT_NAME := infinity_m23xq
+PRODUCT_NAME := custom_m23xq
 PRODUCT_DEVICE := m23xq
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-M236B
