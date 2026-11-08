@@ -83,6 +83,8 @@ TARGET_KERNEL_CONFIG := \
     vendor/samsung/lito-sec-common.config \
     vendor/samsung/m23xq.config
 TARGET_KERNEL_ADDITIONAL_FLAGS += PROJECT_NAME=m23xq
+TARGET_KERNEL_CLANG_VERSION := r416183b
+TARGET_KERNEL_CLANG_PATH := $(abspath .)/prebuilts/clang/kernel/$(HOST_PREBUILT_TAG)/clang-r416183b
 
 # Additional root folders
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
